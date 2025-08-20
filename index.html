@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+    <link id="favicon" rel="icon" href="image/icon4.jpg" type="image/jpg">
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="win-div" id="win-div"></div>
+
+</div>
+<div class="container">
+    <h1 class="header">Single Tetris</h1>
+    <div class="next-container">
+        <canvas width="100px" height="100px" id="next-canvas1" class="next-canvas1"></canvas>
+        <canvas width="100px" height="100px" id="next-canvas2" class="next-canvas2"></canvas>
+    </div>
+    <div class="game-container">
+        <canvas width="250px" height="500px" id="grid-canvas1" class="grid_left"></canvas>
+        <canvas width="48px" height="500px" id="star-canvas1" class="star-canvas1"></canvas>
+        <div class="controls-container">
+            <!-- <div id="score-container" class="score-container">0</div> -->
+            <a id="start-button1" class="start-button1">Single Player</a>
+            <a id="start-button2" class="start-button2">Two Player</a>
+        </div>
+        <canvas width="250px" height="500px" id="grid-canvas2" class="grid_right"></canvas>
+        <canvas width="48px" height="500px" id="star-canvas2" class="star-canvas2"></canvas>
+    </div>
+    
+    <div class="footer">
+        <canvas width="800px" height="100px" id="send-canvas" class="send-canvas"></canvas>
+    </div>
+</div>
+<script src="js/piece.js"></script>
+<script src="js/script.js"></script>
+<script src="js/timers.js"></script>
+<script src="js/events.js"></script>
+<!-- <script src="js/zzz.js"></script> -->
+<!-- <script src="js/polyfill.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,240 @@
+body
+{
+    background-color: #FCFCFC;
+    background-image: url("../image/blue2.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* I: #00CFFF  
+O: #FEE440  
+T: #B388EB  
+S: #6BCB77  
+Z: #FF6B6B  
+J: #4D96FF  
+L: #FFA41B */
+@keyframes winnerFrame {
+  from {
+    width: 5px;
+    height: 8px;
+  }
+  to {
+    width: 640px;
+    height: 426px;
+  }
+}
+.win-div{
+    position : absolute;
+    width: 640px;
+    height: 426px;
+    background-color: #034e20;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../image/fail.png");
+    background-size: contain;
+    animation-name: winnerFrame;
+    animation-duration: 1s;
+    display: block;
+}
+.win-div:hover{
+    cursor: pointer;
+}
+a
+{
+    background-color: #b8d649;
+    color: #0000FF;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    cursor: pointer
+}
+
+
+.container
+{
+    width:800px;
+    margin: 0 auto;
+    /* position: absolute; */
+    margin-top: 50px;
+}
+
+.header
+{
+    text-align: center;
+    font-family: Verdana;
+    color:#0000ff;
+    text-shadow: #CCCCCC 1px 1px 5px;
+}
+
+.game-container
+{
+    height: 500px;
+    margin-top:10px;
+}
+.grid_left
+{
+    float:left;
+    /* display: inline-block; */
+    background-color: white;
+    box-shadow: 0 0 10px 2px #666666;
+    border:1px solid blue;
+}
+
+.grid_right
+{
+    float:right;
+    /* display: inline-block; */
+    background-color: white;
+    box-shadow: 0 0 10px 2px #666666;
+    border:1px solid blue;
+}
+
+
+.star-canvas1{
+    /* background-color: #0b99bd;
+    box-shadow: 0 0 10px 2px #666666;
+    border:1px solid blue; */
+    margin-left: 20px;
+    float:left;
+}
+.star-canvas2{
+    /* background-color: #0bbd55;
+    box-shadow: 0 0 10px 2px #666666;
+    border:1px solid blue; */
+    margin-right: 20px;
+    float:right;
+}
+
+.send-canvas
+{
+    margin-top: 20px;
+}
+
+.next-canvas1
+{
+    float:left;
+    margin-left: 60px;
+}
+.next-canvas2
+{
+    float:right;
+    margin-right: 60px;
+}
+
+.controls-container
+{
+    width:130px;
+    display: inline-block;
+    /* float:right; */
+    height:100%;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.score-container
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 2px #EEEEEE;
+    text-align: center;
+    color: #FF0000;
+    font-size:25px;
+    border:1px solid #CCCCCC;
+    font-weight: bold;
+    padding:5px;
+}
+
+.score-container::before
+{
+    content: "Send Lines";
+    width:100%;
+    float:right;
+    color: #BBBBBB;
+    font-size:15px;
+    font-weight: normal;
+}
+
+.next-container
+{
+    /* box-shadow: 0 0 10px 2px #EEEEEE; */
+    text-align: center;
+    color: #FF0000;
+    font-size:25px;
+    /* border:1px solid #CCCCCC; */
+    font-weight: bold;
+    padding:5px;
+    height: 100px;
+}
+
+.next-container::before
+{
+    width:100%;
+    float:right;
+    color: #BBBBBB;
+    font-size:15px;
+    font-weight: normal;
+}
+
+.start-button1, .start-button2{
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background-color:#f9f9f9;
+    -webkit-border-top-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    border-top-left-radius:3px;
+    -webkit-border-top-right-radius:3px;
+    -moz-border-radius-topright:3px;
+    border-top-right-radius:3px;
+    -webkit-border-bottom-right-radius:3px;
+    -moz-border-radius-bottomright:3px;
+    border-bottom-right-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-bottom-left-radius:3px;
+    text-indent:0;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    color:#666666;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width:100%;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #ffffff;
+}
+
+.start-button1:hover, .start-button2:hover{
+    background-color:#e9e9e9;
+}
+
+.start-button1:active, .start-button2:active{
+     position:relative;
+     top:1px;
+ }
+
+.start-button1, .start-button2{
+    margin-top: 35px;
+}
+
+
+.footer
+{
+    font-family: Verdana;
+    color:#000000;
+    font-size: 12px;
+}
+
+.fb-like {
+    vertical-align: top;
+}
+.fb_iframe_widget span {
+    vertical-align: text-top !important;
+}
